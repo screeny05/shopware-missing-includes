@@ -45,7 +45,7 @@
             {$selector} { background-image: url('{link file=$image.source}'); }
         }
 
-        {if $useRetina}
+        {if $useRetina && $image.retinaSource}
             @media
                 (min-width: {$screenWidth}px) and (-webkit-min-device-pixel-ratio: 2),
                 (min-width: {$screenWidth}px) and (min-resolution: 192dpi) {
